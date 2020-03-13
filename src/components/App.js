@@ -1,9 +1,10 @@
 import React from 'react';
+import Header from './core/header/header';
 
 const App = () => {
   return (
     <div className="App">
-      App
+      <Header></Header>
     </div>
   );
 }
