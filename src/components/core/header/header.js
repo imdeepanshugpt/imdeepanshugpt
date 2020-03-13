@@ -35,10 +35,9 @@ const Header = () => {
                     <Typography variant="h6" className={classes.title}>
                         Deepanshu Gupta
                     </Typography>
-                    <Button className="btn" color="inherit">Blog</Button>
+                    <Button className="btn" color="inherit">Blogs</Button>
                     <Button color="inherit">Skills</Button>
                     <Button color="inherit">About</Button>
-                    <Button color="inherit">Portfolio</Button>
                     <Button color="inherit">Contact</Button>
                 </Toolbar>
             </AppBar>

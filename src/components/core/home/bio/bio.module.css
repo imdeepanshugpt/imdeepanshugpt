@@ -1,0 +1,19 @@
+.bio {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+img {
+    height: 200px;
+    border-radius: 50%;
+}
+
+.profileDetails {
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+span {
+    margin-left: inherit;
+}
