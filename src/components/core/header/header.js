@@ -10,7 +10,10 @@ import './header.module.css';
 
 const useStyles = makeStyles(theme => ({
     root: {
-        flexGrow: 1
+        flexGrow: 1,
+        display: 'flex',
+        width: '100%',
+        flexDirection: 'column'
     },
     header: {
         backgroundColor: '#211F1F'
