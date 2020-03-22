@@ -1,0 +1,23 @@
+.heading{
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 20px;
+}
+.link{
+    text-decoration: none;
+    padding: 5px 10px;
+    line-height: 22px;
+    background: #F4CBB2;
+    color: black;
+    border-radius: 10px;
+}
+.list {
+    list-style-type: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.ulist{
+    display: flex;
+    flex-wrap: wrap;
+}

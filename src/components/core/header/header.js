@@ -29,15 +29,16 @@ const Header = () => {
         <div className={classes.root}>
             <AppBar position="static" className={classes.header}>
                 <Toolbar>
-                    <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+                    {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                         <HomeIcon />
-                    </IconButton>
+                    </IconButton> */}
                     <Typography variant="h6" className={classes.title}>
-                        Deepanshu Gupta
+                        imdeepanshugpt
                     </Typography>
-                    <Button className="btn" color="inherit">Blogs</Button>
-                    <Button color="inherit">Skills</Button>
-                    <Button color="inherit">About</Button>
+                    <Button className="btn" color="inherit"
+                        href="https://medium.com/@imdeepanshugpt">Blogs</Button>
+                    <Button color="inherit">Work with me</Button>
+                    <Button color="inherit" href="https://github.com/imdeepanshugpt">What I Do</Button>
                     <Button color="inherit">Contact</Button>
                 </Toolbar>
             </AppBar>
