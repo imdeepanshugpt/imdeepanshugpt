@@ -18,7 +18,9 @@ const Skills = () => {
         { name: 'Spark', url: '' },
         { name: 'Hadoop', url: '' },
         { name: 'RESTAPI', url: '' },
-        { name: 'Microservices', url: '' }
+        { name: 'Microservices', url: '' },
+        { name: 'Java', url: '' },
+        { name: 'RedHat', url: '' }
     ];
     function renderList() {
         return skills.map((skill) => {
