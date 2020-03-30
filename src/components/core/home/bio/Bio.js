@@ -10,7 +10,7 @@ const Bio = () => {
             </div>
             <div className={classes.profileDetails} >
                 <h1> Deepanshu Gupta </h1>
-                <span>Software Developer | Computer Science Engineer</span>
+                <p>Hi, I am Software Engineer</p>
             </div>
         </div>
     );

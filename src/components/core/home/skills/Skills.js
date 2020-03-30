@@ -14,13 +14,11 @@ const Skills = () => {
         { name: 'DOMO', url: 'https://www.domo.com/', id: 9 },
         { name: 'Data Analytics', url: '', id: 10 },
         { name: 'Big Data', url: '', id: 11 },
-        { name: 'Spark', url: '', id: 12 },
-        { name: 'Hadoop', url: '', id: 13 },
-        { name: 'RESTAPI', url: '', id: 14 },
-        { name: 'Microservices', url: '', id: 15 },
-        { name: 'Java', url: '', id: 16 },
-        { name: 'RedHat', url: '', id: 17 },
-        { name: 'MEAN & MERN', url: '', id: 18 },
+        { name: 'RESTAPI', url: '', id: 12 },
+        { name: 'Microservices', url: '', id: 13 },
+        { name: 'Java', url: '', id: 14 },
+        { name: 'RedHat', url: '', id: 15 },
+        { name: 'MEAN & MERN', url: '', id: 16 },
     ];
     function renderList() {
         return skills.map((skill) => {

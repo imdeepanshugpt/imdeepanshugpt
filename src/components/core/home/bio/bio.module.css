@@ -1,22 +1,28 @@
 .bio {
-    display: flex;
-    justify-content: center;
-    background: aliceblue;
+  display: flex;
+  justify-content: center;
+  background: aliceblue;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 img {
-    height: 200px;
-    margin: 5px;
-    border-color: white;
-    border-radius: 50%;
-    border-style: solid;
+  height: 200px;
+  border-color: white;
+  border-radius: 50%;
+  border-style: solid;
 }
 
 .profileDetails {
-    flex-wrap: wrap;
-    margin: 10px;
+  flex-wrap: wrap;
+  margin: 10px;
+  width: 50%;
+  text-align: center;
 }
 
 span {
-    margin-left: inherit;
+  margin-left: inherit;
+}
+.profile-avatar {
+  width: 50%;
 }
