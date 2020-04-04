@@ -17,12 +17,19 @@ img {
   flex-wrap: wrap;
   margin: 10px;
   width: 50%;
-  text-align: center;
+  text-align: inherit;
+  padding: 15px;
+  font-size: 20px;
 }
 
 span {
   margin-left: inherit;
 }
+
 .profile-avatar {
   width: 50%;
+}
+
+.about {
+  text-align: left;
 }

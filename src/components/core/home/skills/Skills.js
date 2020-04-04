@@ -13,11 +13,10 @@ const Skills = () => {
         { name: 'Full Stack Development', url: '', id: 8 },
         { name: 'DOMO', url: 'https://www.domo.com/', id: 9 },
         { name: 'Data Analytics', url: '', id: 10 },
-        { name: 'Big Data', url: '', id: 11 },
         { name: 'RESTAPI', url: '', id: 12 },
         { name: 'Microservices', url: '', id: 13 },
         { name: 'Java', url: '', id: 14 },
-        { name: 'RedHat', url: '', id: 15 },
+        { name: 'RHEL', url: '', id: 15 },
         { name: 'MEAN & MERN', url: '', id: 16 },
     ];
     function renderList() {
@@ -34,7 +33,7 @@ const Skills = () => {
     }
     return (
         <div>
-            <div className={classes.heading}><b>My Skills</b></div>
+            <h1>My Skills</h1>
             <div>
                 <ul className={classes.ulist}>
                     {renderList()}
