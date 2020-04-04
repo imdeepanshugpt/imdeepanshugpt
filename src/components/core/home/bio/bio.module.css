@@ -22,6 +22,12 @@ img {
   font-size: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+  .profileDetails {
+    width: 100%;
+  }
+}
+
 span {
   margin-left: inherit;
 }

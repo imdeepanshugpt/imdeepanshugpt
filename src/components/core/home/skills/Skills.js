@@ -12,7 +12,7 @@ const Skills = () => {
         { name: 'SQL', url: 'https://en.wikipedia.org/wiki/SQL', id: 7 },
         { name: 'Full Stack Development', url: '', id: 8 },
         { name: 'DOMO', url: 'https://www.domo.com/', id: 9 },
-        { name: 'Data Analytics', url: '', id: 10 },
+        { name: 'Data Visualization', url: '', id: 10 },
         { name: 'RESTAPI', url: '', id: 12 },
         { name: 'Microservices', url: '', id: 13 },
         { name: 'Java', url: '', id: 14 },
