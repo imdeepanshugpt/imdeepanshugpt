@@ -67,7 +67,7 @@ const Contact = () => {
   }
   return (
     <div className={style.contact} id="contact">
-      <h1 className={style.message}>Message me</h1>
+      <h1 className={style.message}>Write a message for me</h1>
       <form
         id="form"
         onSubmit={(event) => sendEmail(event)}

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .contact {
-  background: #f4cbb2;
+  /* background: #f4cbb2; */
+  background: rgba(240, 220, 200, 1);
   display: block;
 }
 
@@ -18,7 +19,7 @@ h1 {
 }
 
 .area {
-  background: #f4cbb2;
+  background: rgba(240, 220, 200, 1);
   height: 300px;
   width: 100%;
   border-radius: 5px;
