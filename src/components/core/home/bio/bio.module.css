@@ -33,3 +33,7 @@ span {
 .about {
   text-align: left;
 }
+
+.profileAvatar {
+  margin: auto;
+}
