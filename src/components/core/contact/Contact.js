@@ -112,6 +112,7 @@ const Contact = () => {
         </Grid>
         <Button
           type="submit"
+          fullWidth
           variant="outlined"
           endIcon={<Icon>send</Icon>}
         >
