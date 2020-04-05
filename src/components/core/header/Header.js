@@ -21,6 +21,8 @@ const useStyles = makeStyles(theme => ({
     },
     title: {
         flexGrow: 1,
+        fontFamily: `'Dancing Script', cursive`,
+        fontSize:'30px'
     },
 }));
 

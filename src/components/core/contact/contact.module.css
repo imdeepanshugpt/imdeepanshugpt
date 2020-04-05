@@ -1,26 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .contact {
-  background: antiquewhite;
+  background: #e0e5ec;
   display: block;
+  padding: 20px;
 }
 
 h1 {
   text-align: center;
+  color: darkslategray;
   font-family: 'Montserrat', sans-serif;
 }
 
 .form {
   margin: auto;
-  width: 60%;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
+  background: #e0e5ec;
+  border-radius: 10px;
+  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
 }
 
 .area {
-  background: antiquewhite;
+  background: #e0e5ec;
   height: 300px;
-  width: 100%;
+  width: -webkit-fill-available;
   border-radius: 5px;
   font: inherit;
   padding: 10px;
