@@ -6,21 +6,20 @@ import style from './social.module.css';
 const Social = () => {
     return (
         <div className="socialMediaIcons">
-            {/* <span className={style.title}>Follow me </span> */}
             <a href="https://twitter.com/imdeepanshugpt" className={style.socialLink}>
-                <FontAwesomeIcon icon={faTwitter} className={style.twitter} />
+                <FontAwesomeIcon icon={faTwitter} className={style.twitter + " " + style.animation} />
             </a>
             <a href="https://facebook.com/imdeepanshugpt" className={style.socialLink}>
-                <FontAwesomeIcon icon={faFacebook} className={style.facebook} />
+                <FontAwesomeIcon icon={faFacebook} className={style.facebook + " " + style.animation} />
             </a>
             <a href="https://instagram.com/imdeepanshugpt" className={style.socialLink}>
-                <FontAwesomeIcon icon={faInstagram} className={style.instagram} />
+                <FontAwesomeIcon icon={faInstagram} className={style.instagram + " " + style.animation} />
             </a>
             <a href="https://medium.com/@imdeepanshugpt" className={style.socialLink}>
-                <FontAwesomeIcon icon={faMedium} className={style.medium} />
+                <FontAwesomeIcon icon={faMedium} className={style.medium + " " + style.animation} />
             </a>
             <a href="https://www.linkedin.com/in/imdeepanshugpt/" className={style.socialLink}>
-                <FontAwesomeIcon icon={faLinkedin} className={style.linkedin} />
+                <FontAwesomeIcon icon={faLinkedin} className={style.linkedin + " " + style.animation} />
             </a>
         </div>
     );

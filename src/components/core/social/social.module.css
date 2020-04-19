@@ -2,6 +2,13 @@
     color: #3b5998;
 }
 
+.animation {
+    transition: all .2s ease-in-out;
+}
+.animation:hover {
+    transform: scale(1.2);
+}
+
 .twitter {
     color: #00aced;
 }
