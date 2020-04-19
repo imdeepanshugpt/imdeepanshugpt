@@ -1,0 +1,32 @@
+.facebook {
+    color: #3b5998;
+}
+
+.twitter {
+    color: #00aced;
+}
+
+.instagram {
+    color: #bc2a8d;
+}
+
+.medium {
+    color: rgba(0, 0, 0, 0.84);
+}
+
+.linkedin {
+    color: #007bb6
+}
+
+.socialLink {
+    font-size: 30px;
+    margin: 5px;
+}
+
+.title {
+    display: block;
+    font-size: 2em;
+    color: darkslategray;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}

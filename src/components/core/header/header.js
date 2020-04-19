@@ -33,7 +33,7 @@ const Header = () => {
             <AppBar position="static" className={classes.header}>
                 <Toolbar>
                     <Typography variant="h6" className={classes.title}>
-                        imdeepanshugpt
+                        Deepanshu Gupta
                     </Typography>
                     <Button className="btn" color="inherit"
                         href="https://medium.com/@imdeepanshugpt" target="_blank">Blogs</Button>
