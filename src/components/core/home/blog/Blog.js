@@ -4,7 +4,7 @@ import classes from './blog.module.css';
 const Blog = () => {
     return (
         <div className="article">
-            <h1>My Blogs</h1>
+            <h1>My Articles</h1>
             <div className={classes.blogs}>
                 <div className={classes.blog}>
                     <blockquote className="embedly-card"><h4><a href="https://medium.com/@imdeepanshugpt/redux-saga-react-middleware-a3f5dc236dc1">Redux Saga | React Middleware</a></h4><p>Saga is just a middleware to handle asynchronous actions, though, with more capabilities and quite a bit more complex. One major bonus is that Saga can help you thin out your action creators and provides you "side effects" since you have separate actions, reducers and saga files.</p></blockquote>

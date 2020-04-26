@@ -4,7 +4,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import './header.module.css';
 
 const useStyles = makeStyles(theme => ({
@@ -36,9 +35,6 @@ const Header = () => {
                     <Typography variant="h6" className={classes.title}>
                         Deepanshu Gupta
                     </Typography>
-                    <Button className="btn" color="inherit"
-                        href="https://medium.com/@imdeepanshugpt" target="_blank">Blogs</Button>
-                    <Button color="inherit" href="https://github.com/imdeepanshugpt" target="_blank">github</Button>
                 </Toolbar>
             </AppBar>
         </div>
