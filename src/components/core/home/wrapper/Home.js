@@ -5,7 +5,7 @@ import Blog from '../blog/Blog';
 
 const Home = () => {
     return (
-        <div className="home">
+        <div className="home" style={{ paddingTop: '60px' }}>
             <Bio />
             <Skills />
             <Blog />

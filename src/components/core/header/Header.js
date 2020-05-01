@@ -11,10 +11,14 @@ const useStyles = makeStyles(theme => ({
         flexGrow: 1,
         display: 'flex',
         width: '100%',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        position: 'fixed',
+        top: '0',
+        zIndex: '10'
     },
     header: {
-        backgroundColor: '#211F1F'
+        backgroundColor: 'white',
+        color: 'black'
     },
     menuButton: {
         marginRight: theme.spacing(2),

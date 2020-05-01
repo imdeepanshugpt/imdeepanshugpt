@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from './core/header/Header';
-import Home from './core/home/hoc/Home';
+import Home from './core/home/wrapper/Home';
 import Contact from './core/contact/Contact';
+import Footer from './core/footer/footer';
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Header></Header>
       <Home></Home>
       <Contact></Contact>
+      <Footer></Footer>
     </div>
   );
 }

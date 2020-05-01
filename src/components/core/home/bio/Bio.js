@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from './bio.module.css';
-import Social from '../../social/Social';
 
 const Bio = () => {
     const profileImage = require('../../../../assets/imdeepanshugpt.jpg');
@@ -8,7 +7,6 @@ const Bio = () => {
         <div className={classes.bio} >
             <div className={classes.profileAvatar} >
                 <img src={profileImage} alt="ProfileImage" />
-                <Social />
             </div>
             <div className={classes.profileDetails} >
                 <h1 className={classes.about}> About me </h1>
