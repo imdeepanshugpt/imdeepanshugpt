@@ -5,6 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import './header.module.css';
+import history from '../../history';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -26,7 +27,7 @@ const useStyles = makeStyles(theme => ({
     title: {
         flexGrow: 1,
         fontFamily: `'Dancing Script', cursive`,
-        fontSize:'30px'
+        fontSize: '30px'
     },
 }));
 
@@ -37,9 +38,15 @@ const Header = () => {
             <AppBar position="static" className={classes.header}>
                 <Toolbar>
                     <Typography variant="h6" className={classes.title}>
-                        Deepanshu Gupta
+                    <Button
+                    onClick={() => { history.push("/") }}
+                    >home</Button>
                     </Typography>
                     <Button href="https://blog.deepanshugupta.info">blog</Button>
+                    <Button
+                        onClick={() => { history.push("/projects") }}
+                    >
+                        Projects</Button>
                 </Toolbar>
             </AppBar>
         </div>

@@ -6,7 +6,7 @@ const Bio = () => {
     return (
         <div className={classes.bio} >
             <div className={classes.profileAvatar} >
-                <img src={profileImage} alt="ProfileImage" />
+                <img className={classes.img} src={profileImage} alt="ProfileImage" />
             </div>
             <div className={classes.profileDetails} >
                 <h1 className={classes.about}> About me </h1>
