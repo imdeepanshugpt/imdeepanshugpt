@@ -46,10 +46,11 @@ const Footer = () => {
                 <Grid item xs={12} className={classes.copyright}>
                     <span>No &copy; copyright issues.</span>
                     <span style={{ margin: "5px", borderLeft: '1px solid #7e35a0' }}>
-                        &nbsp;&nbsp;Developed by me with
+                        &nbsp;&nbsp;Developed with
                         <span>
                             <FontAwesomeIcon icon={faHeart} className={classes.heart} />
                         </span>
+                        &nbsp;by Deepanshu Gupta 
                     </span>
                     <Button style={{ float: 'right' }} aria-label="delete" onClick={topFunction}>
                         <ArrowUpwardIcon /> Top
