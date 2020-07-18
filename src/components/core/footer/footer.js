@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
         textAlign: "center",
-        background: 'white',
+        background: 'linear-gradient(45deg,#00ae7b,#0081bf)',
         color: 'black',
         marginLeft: '10%',
         marginRight: '10%'
