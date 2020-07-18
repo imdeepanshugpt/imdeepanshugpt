@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
         textAlign: "center",
-        background: 'linear-gradient(45deg,#00ae7b,#0081bf)',
+        background: "linear-gradient(45deg, #a2a2ec, #e4b17f)",
         color: 'black',
         height: '80px'
     },
@@ -34,7 +34,7 @@ const Footer = () => {
         <footer className={classes.root}>
             <Grid container>
                 <Grid item xs={8} className={classes.copyright}>
-                    <span>&copy; copyright 2020.</span>
+                    <span>&copy; 2020 Deepanshu Gupta ALL RIGHTS RESERVED.</span>
                     <span style={{ margin: "5px", borderLeft: '1px solid #7e35a0' }}>
                         &nbsp;&nbsp;Developed with
                         <span>

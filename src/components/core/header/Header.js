@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
         zIndex: '10'
     },
     header: {
-        background: "linear-gradient(45deg,#00ae7b,#0081bf)",
+        background: "linear-gradient(45deg, #a2a2ec, #e4b17f)",
         color: 'black'
     },
     menuButton: {
@@ -46,7 +46,7 @@ const Header = () => {
                     <Button
                         onClick={() => { history.push("/projects") }}
                     >
-                        Projects</Button>
+                    Experience & Projects</Button>
                 </Toolbar>
             </AppBar>
         </header>
