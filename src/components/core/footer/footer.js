@@ -14,8 +14,6 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center",
         background: 'linear-gradient(45deg,#00ae7b,#0081bf)',
         color: 'black',
-        marginLeft: '10%',
-        marginRight: '10%'
     },
     heart: {
         color: "red",
