@@ -15,7 +15,7 @@ const Skills = () => {
         { name: 'Data Visualization', url: '', id: 10 },
         { name: 'RESTAPI', url: '', id: 12 },
         { name: 'Microservices', url: '', id: 13 },
-        { name: 'Java', url: '', id: 14 },
+        { name: 'Javascript', url: '', id: 14 },
         { name: 'Redhat Linux', url: '', id: 15 },
         { name: 'MEAN & MERN', url: '', id: 16 },
     ];

@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './bio.module.css';
+import Social from '../../social/Social';
 
 const Bio = () => {
     const profileImage = require('../../../../assets/imdeepanshugpt.jpg');
@@ -11,10 +12,9 @@ const Bio = () => {
             <div className={classes.profileDetails} >
                 <h1 className={classes.about}> About me </h1>
                 <p className={classes.description}>
-                    Deepanshu Gupta is a computer science engineer who is very dedicated to his work and passion for the latest technologies in the market. He always tries to apply innovative ideas to build and design the product and that can be used to apply in the real world.
-                    <br />
-                    He has around 2+ years of industry experience and worked on complex projects of the IT industry. He is currently working in as a full stack javascript developer.
+                    Deepanshu Gupta is a web developer who has more than 2 years of experience in the IT Industry. He loves to explore the latest technologies and passionate about product designing, development, and solving problems with it.
                 </p>
+                <Social />
             </div>
         </div>
     );

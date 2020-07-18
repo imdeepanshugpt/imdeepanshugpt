@@ -1,5 +1,4 @@
 import React from 'react';
-import Social from '../social/Social';
 import './footer.module.css';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
@@ -14,17 +13,14 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center",
         background: 'linear-gradient(45deg,#00ae7b,#0081bf)',
         color: 'black',
+        height: '80px'
     },
     heart: {
         color: "red",
     },
-    socialmedia: {
-        padding: "5px",
-    },
     copyright: {
-        fontFamily: `'Raleway', sans-serif`,
-        padding: '5px',
-        borderTop: '1px solid #7e35a0',
+        margin: 'auto',
+        paddingTop: '30px',
     }
 }));
 
@@ -37,23 +33,19 @@ const Footer = () => {
     return (
         <footer className={classes.root}>
             <Grid container>
-                <Grid item xs={12} className={classes.socialmedia}>
-                    <h1 style={{ margin: '0px' }}>Connect with me</h1>
-                    <Social />
-                </Grid>
-                <Grid item xs={12} className={classes.copyright}>
-                    <span>No &copy; copyright issues.</span>
+                <Grid item xs={8} className={classes.copyright}>
+                    <span>&copy; copyright 2020.</span>
                     <span style={{ margin: "5px", borderLeft: '1px solid #7e35a0' }}>
                         &nbsp;&nbsp;Developed with
                         <span>
                             <FontAwesomeIcon icon={faHeart} className={classes.heart} />
                         </span>
-                        &nbsp;by Deepanshu Gupta 
+                        &nbsp;by Deepanshu Gupta
                     </span>
-                    <Button style={{ float: 'right' }} aria-label="delete" onClick={topFunction}>
-                        <ArrowUpwardIcon /> Top
-                    </Button>
                 </Grid>
+                <Button style={{ float: 'right' }} aria-label="delete" onClick={topFunction}>
+                    <ArrowUpwardIcon /> Top
+                </Button>
             </Grid>
         </footer>
     )
