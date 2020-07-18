@@ -13,14 +13,13 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center",
         background: "linear-gradient(45deg, #a2a2ec, #e4b17f)",
         color: 'black',
-        height: '80px'
     },
     heart: {
         color: "red",
     },
     copyright: {
         margin: 'auto',
-        paddingTop: '30px',
+        padding: '20px',
     }
 }));
 
