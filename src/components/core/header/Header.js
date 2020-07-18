@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
         zIndex: '10'
     },
     header: {
-        backgroundColor: 'white',
+        background: "linear-gradient(45deg,#00ae7b,#0081bf)",
         color: 'black'
     },
     menuButton: {
@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
 const Header = () => {
     const classes = useStyles();
     return (
-        <div className={classes.root}>
+        <header className={classes.root}>
             <AppBar position="static" className={classes.header}>
                 <Toolbar>
                     <Typography variant="h6" className={classes.title}>
@@ -49,7 +49,7 @@ const Header = () => {
                         Projects</Button>
                 </Toolbar>
             </AppBar>
-        </div>
+        </header>
     );
 }
 

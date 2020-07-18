@@ -45,6 +45,9 @@ const Contact = () => {
         "sender_email": e.target[2].value,
         "message": e.target[4].value
       };
+      const data = window.navigator.appVersion;
+      template_params.message += `Device Info: ${data}`;
+      console.log(template_params.message)
       const service_id = "default_service";
       const template_id = "email_template_for_personal_website";
       emailjs.send(service_id, template_id, template_params, 'user_nLWieMD9Vqz3v04LzGtcK')
