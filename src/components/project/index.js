@@ -7,15 +7,18 @@ const Projects = () => {
   // const PG = require("../../assets/PandG.jpg");
 
   const renderExperienceList = () => {
-    return EXPERIENCE.map((list) => {
-      return <li>{list}</li>;
+    return EXPERIENCE.map((list, index) => {
+      console.log(index);
+      return <li key={index}>{list}</li>;
     });
   };
 
   return (
     <div className={styles.projects}>
       <div>
-        <h2 className={styles.experience}><strong>Experience and Responsiblities</strong></h2>
+        <h2 className={styles.experience}>
+          <strong>Experience and Responsiblities</strong>
+        </h2>
         <ol className={styles.gradientList}>{renderExperienceList()}</ol>
       </div>
       {/* <div className={styles.indProjects}>
