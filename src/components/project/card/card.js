@@ -14,7 +14,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ProjectCard({ src, hide, description, title, codeUrl, liveUrl }) {
+export default function Card({ src, hide, description, title, codeUrl, liveUrl }) {
   const classes = useStyles();
 
   return (

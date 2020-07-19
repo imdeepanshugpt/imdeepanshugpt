@@ -5,7 +5,7 @@ import Footer from './core/footer/footer';
 import PageNotFound from './page-not-found/PageNotFound';
 import { Router, Route } from 'react-router-dom';
 import history from './history';
-import Projects from './project';
+import Projects from './project/project';
 
 const App = () => {
   return (
