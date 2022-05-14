@@ -77,7 +77,10 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "start:prod": "node server.js"
+    "start:prod": "node server.js",
+    "prepare": "husky install",
+    "lint": "eslint \"src/**/*.{js,jsx}\"",
+    "lint:fix": "eslint \"src/**/*.{js,jsx}\" --fix"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -146,5 +149,9 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "pretty-quick": "^3.1.3"
   }
 }

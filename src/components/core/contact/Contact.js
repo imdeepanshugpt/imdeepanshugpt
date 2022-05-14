@@ -17,22 +17,23 @@ const Contact = () => {
 
     let errorFound = false;
 
-    if (e.target[0].value === "") {
+    if (e.target[0].value === '') {
       setName(true);
       errorFound = true;
     } else {
       setName(false);
     }
     // eslint-disable-next-line no-useless-escape
-    const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if (!(regex.test(e.target[2].value))) {
+    const regex =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!regex.test(e.target[2].value)) {
       errorFound = true;
       setEmail(true);
     } else {
       setEmail(false);
     }
 
-    if (e.target[4].value === "") {
+    if (e.target[4].value === '') {
       errorFound = true;
       setMessage(true);
     } else {
@@ -41,31 +42,33 @@ const Contact = () => {
 
     if (!errorFound) {
       const template_params = {
-        "sender_name": e.target[0].value,
-        "sender_email": e.target[2].value,
-        "message": e.target[4].value
+        sender_name: e.target[0].value,
+        sender_email: e.target[2].value,
+        message: e.target[4].value,
       };
       const data = window.navigator.appVersion;
       template_params.message += `Device Info: ${data}`;
-      console.log(template_params.message)
-      const service_id = "default_service";
-      const template_id = "email_template_for_personal_website";
-      emailjs.send(service_id, template_id, template_params, 'user_nLWieMD9Vqz3v04LzGtcK')
-        .then((result) => {
+      console.log(template_params.message);
+      const service_id = 'default_service';
+      const template_id = 'email_template_for_personal_website';
+      emailjs.send(service_id, template_id, template_params, 'user_nLWieMD9Vqz3v04LzGtcK').then(
+        (result) => {
           console.log(result.text);
-          document.getElementById("form").reset();
-        }, (error) => {
+          document.getElementById('form').reset();
+        },
+        (error) => {
           console.log(error.text);
-        });
+        },
+      );
     }
   }
 
   function setError(type) {
-    if (name && type === "name") {
+    if (name && type === 'name') {
       return <p className={style.error}>Please enter a name</p>;
-    } else if (email && type === "email") {
+    } else if (email && type === 'email') {
       return <p className={style.error}>Please enter a valid email</p>;
-    } else if (message && type === "message") {
+    } else if (message && type === 'message') {
       return <p className={style.error}>Please leave a message</p>;
     }
   }
@@ -77,7 +80,8 @@ const Contact = () => {
         onSubmit={(event) => sendEmail(event)}
         noValidate
         autoComplete="off"
-        className={style.form}>
+        className={style.form}
+      >
         <Grid container spacing={2} alignContent="center">
           <Grid item xs={6}>
             <TextField
@@ -110,21 +114,17 @@ const Contact = () => {
               className={style.area}
               aria-label="text-area"
               rowsMin={10}
-              placeholder="Message *" />
+              placeholder="Message *"
+            />
             {setError('message')}
           </Grid>
         </Grid>
-        <Button
-          type="submit"
-          fullWidth
-          variant="outlined"
-          endIcon={<Icon>send</Icon>}
-        >
+        <Button type="submit" fullWidth variant="outlined" endIcon={<Icon>send</Icon>}>
           Send
-      </Button>
+        </Button>
       </form>
     </div>
   );
-}
+};
 
 export default Contact;

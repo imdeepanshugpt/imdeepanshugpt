@@ -1,7 +1,7 @@
-import React from "react";
-import styles from "./project.module.css";
+import React from 'react';
+import styles from './project.module.css';
 // import ProjectCard from "./project-card/project-card";
-import { EXPERIENCE } from "./index.constant";
+import { EXPERIENCE } from './index.constant';
 
 const Projects = () => {
   // const PG = require("../../assets/PandG.jpg");
