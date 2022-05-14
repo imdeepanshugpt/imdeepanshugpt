@@ -5,14 +5,14 @@ import Blog from '../blog/Blog';
 import Contact from '../../contact/Contact';
 
 const Home = () => {
-    return (
-        <div className="home">
-            <Bio />
-            <Skills />
-            <Blog />
-            <Contact></Contact>
-        </div>
-    );
-}
+  return (
+    <div className="home">
+      <Bio />
+      <Skills />
+      <Blog />
+      <Contact></Contact>
+    </div>
+  );
+};
 
 export default Home;
