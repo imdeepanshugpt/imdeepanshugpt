@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 import Icon from '@material-ui/core/Icon';
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const [name, setName] = useState(false);
@@ -25,7 +25,7 @@ const Contact = () => {
     }
     // eslint-disable-next-line no-useless-escape
     const regex =
-      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      /^(([^<>()\\[\]\\.,;:\s@"]+(\.[^<>()\\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!regex.test(e.target[2].value)) {
       errorFound = true;
       setEmail(true);
@@ -41,25 +41,25 @@ const Contact = () => {
     }
 
     if (!errorFound) {
-      const template_params = {
-        sender_name: e.target[0].value,
-        sender_email: e.target[2].value,
-        message: e.target[4].value,
-      };
-      const data = window.navigator.appVersion;
-      template_params.message += `Device Info: ${data}`;
-      console.log(template_params.message);
-      const service_id = 'default_service';
-      const template_id = 'email_template_for_personal_website';
-      emailjs.send(service_id, template_id, template_params, 'user_nLWieMD9Vqz3v04LzGtcK').then(
-        (result) => {
-          console.log(result.text);
-          document.getElementById('form').reset();
-        },
-        (error) => {
-          console.log(error.text);
-        },
-      );
+      // const template_params = {
+      //   sender_name: e.target[0].value,
+      //   sender_email: e.target[2].value,
+      //   message: e.target[4].value,
+      // };
+      // const data = window.navigator.appVersion;
+      // template_params.message += `Device Info: ${data}`;
+      // console.log(template_params.message);
+      // const service_id = 'default_service';
+      // const template_id = 'email_template_for_personal_website';
+      // emailjs.send(service_id, template_id, template_params, 'user_nLWieMD9Vqz3v04LzGtcK').then(
+      //   (result) => {
+      //     console.log(result.text);
+      //     document.getElementById('form').reset();
+      //   },
+      //   (error) => {
+      //     console.log(error.text);
+      //   },
+      // );
     }
   }
 
